@@ -7,3 +7,13 @@
 .red{
     color: red;
 }
+.btn {
+    display: grid;
+    place-content: center;
+    background-color: rgb(245, 26, 190);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 30px;
+  }

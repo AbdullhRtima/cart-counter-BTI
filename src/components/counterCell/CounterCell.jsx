@@ -15,8 +15,8 @@ function CounterCell(props) {
                 {props.count}
             </p>
             <div className="flex-container">
-                <button onClick={() => props.increment(props.id)}>+</button>
-                <button disabled={props.count === 0} onClick={() => props.decrement(props.id)}>-</button>
+                <button  className='btn' onClick={() => props.increment(props.id)}>+</button>
+                <button className='btn' disabled={props.count === 0} onClick={() => props.decrement(props.id)}>-</button>
             </div>
         </div>
     )

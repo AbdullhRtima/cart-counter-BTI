@@ -1,9 +1,7 @@
 .app {
   display: flex;
   justify-content: center;
-  background-color: gainsboro;
-  height: 100vh;
-}
+  }
 .flex-container {
   display: flex;
   flex-direction: row;

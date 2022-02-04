@@ -4,7 +4,7 @@ import CounterCell from '../../components/counterCell';
 
 import './CartCounter.css';
 
-const counters = [1, 2, 3,];
+const counters = [1, 2, 3];
 const CartCounter = () => {
     // state
     const [count, setCount] = useState({
@@ -61,16 +61,16 @@ const CartCounter = () => {
     }, [count]);
 
     useEffect(() => {
-        console.log("JUST HI");
+       
     }, []);
     
     return (
-        <div>
-            <h1> Cart Counter {count.total} </h1>
+        <div className='container'>
+            <h1 className='text'> Cart Counter {count.total} </h1>
             {counters.map(counter => {
                 return (
-                    <div key={counter}>
-                        <CounterCell
+                    <div  key={counter}>
+                        <CounterCell 
                             count={count.items[counter].count}
                             increment={increment}
                             decrement={decrement}
